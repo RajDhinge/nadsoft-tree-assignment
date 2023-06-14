@@ -1,0 +1,1 @@
+please create Nadsoft folder in root public html directory and extract this files there.
