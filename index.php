@@ -8,7 +8,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-latest.js"></script>
-  <script src="script.js"></script>
+  <script src="./js/script.js"></script>
 </head>
 <body>
 <h1>Nadsoft Tree</h1><hr>
@@ -16,7 +16,7 @@
 <div class="container">
   <div id="start">
     <?php
-      require_once 'Database.php';
+      require_once './Model/Database.php';
       $db = new Database();
       $db->initialize();
       $db->categoryTree(1);
@@ -46,7 +46,7 @@
               <option value="1">root</option>
               <?php
                 $db->names();
-              ?>
+                ?>
             </select>
           </div>
           <div>Name</div>
